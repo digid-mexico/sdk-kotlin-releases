@@ -12,7 +12,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         // DigidSDK
-        maven { url = uri("https://raw.githubusercontent.com/digid-mexico/sdk-android-releases/main/repository") }
+        maven { url = uri("https://raw.githubusercontent.com/digid-mexico/sdk-kotlin-releases/main/repository") }
     }
 }
 ```
