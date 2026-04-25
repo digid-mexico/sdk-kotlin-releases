@@ -13,8 +13,6 @@ dependencyResolutionManagement {
         mavenCentral()
         // DigidSDK
         maven { url = uri("https://raw.githubusercontent.com/digid-mexico/sdk-android-releases/main/repository") }
-        // Dependencia interna requerida por DigidSDK
-        maven { url = uri("https://raw.githubusercontent.com/didit-protocol/sdk-android/main/repository") }
     }
 }
 ```
