@@ -3,7 +3,7 @@
   "component": {
     "group": "com.digid",
     "module": "digid-sdk",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -40,13 +40,13 @@
       ],
       "files": [
         {
-          "name": "digid-sdk-2.0.0.aar",
-          "url": "digid-sdk-2.0.0.aar",
-          "size": 267041,
-          "sha512": "17c83be90e540655605b684394dc89805fe47a2cd69b1d5e80c5dd4556ea38179ca294a88ac229a6b91cf753c084abe728e755524b0f2fb4f4bd46f2a0f0d175",
-          "sha256": "7779f9ab3a17170644f6dd63df51145fcfa71027f9ec2636e5c1a401f610fff4",
-          "sha1": "98a630246935b17fccf9335bda0b58fc4098fe22",
-          "md5": "271b0d5c98339d82ef45d9266d16e949"
+          "name": "digid-sdk-2.0.1.aar",
+          "url": "digid-sdk-2.0.1.aar",
+          "size": 267040,
+          "sha512": "392b57644c052cca6a917827bb982ce576ae5a0cbcfec00d36cef191b99d4ccb2ec2f8d821442be772b5729b789be172219ea0e26be76834342f1b2a539ddca6",
+          "sha256": "b836ad156455e5acc8e9fecb52e59e2bfb80122acff24d22bc7309b5bbdc2a59",
+          "sha1": "b26920353569ddc94beb017eb33cce39d20f11b8",
+          "md5": "0c1d8d13b58ee23866d04ba7c3757301"
         }
       ]
     },
@@ -195,13 +195,13 @@
       ],
       "files": [
         {
-          "name": "digid-sdk-2.0.0.aar",
-          "url": "digid-sdk-2.0.0.aar",
-          "size": 267041,
-          "sha512": "17c83be90e540655605b684394dc89805fe47a2cd69b1d5e80c5dd4556ea38179ca294a88ac229a6b91cf753c084abe728e755524b0f2fb4f4bd46f2a0f0d175",
-          "sha256": "7779f9ab3a17170644f6dd63df51145fcfa71027f9ec2636e5c1a401f610fff4",
-          "sha1": "98a630246935b17fccf9335bda0b58fc4098fe22",
-          "md5": "271b0d5c98339d82ef45d9266d16e949"
+          "name": "digid-sdk-2.0.1.aar",
+          "url": "digid-sdk-2.0.1.aar",
+          "size": 267040,
+          "sha512": "392b57644c052cca6a917827bb982ce576ae5a0cbcfec00d36cef191b99d4ccb2ec2f8d821442be772b5729b789be172219ea0e26be76834342f1b2a539ddca6",
+          "sha256": "b836ad156455e5acc8e9fecb52e59e2bfb80122acff24d22bc7309b5bbdc2a59",
+          "sha1": "b26920353569ddc94beb017eb33cce39d20f11b8",
+          "md5": "0c1d8d13b58ee23866d04ba7c3757301"
         }
       ]
     },
@@ -215,13 +215,13 @@
       },
       "files": [
         {
-          "name": "digid-sdk-2.0.0-sources.jar",
-          "url": "digid-sdk-2.0.0-sources.jar",
-          "size": 67089,
-          "sha512": "e19388648dc55ed783b3447ef4b4c26ee9d990a8a0ff8060c40a065f136f47bae24003b3a05e71e325588c527f236692af2a7642d40f634bb3d5d4194f4bd837",
-          "sha256": "1ca9f33c5108a53d517feecacd15048a47b0eb347b0ef98280cafc8c9f10c8f9",
-          "sha1": "7c7f0f14063c3fa7c05a3d7445f10079c0b8f73b",
-          "md5": "b0dcd7d0fb4a57d8ece2f4670fbddb0e"
+          "name": "digid-sdk-2.0.1-sources.jar",
+          "url": "digid-sdk-2.0.1-sources.jar",
+          "size": 67090,
+          "sha512": "ad366cc313c459fc595daaa77172b52ecd44cb8672f1b7113ca7d640d2abaaf3c3f409877119458adc2daef74d0adbc8aadcd86a3bb90af3ce55fa9db80a3a3f",
+          "sha256": "b691801a0956ba4f8e00ddd6877c37437fe338267f0f383076566b95225ebe5d",
+          "sha1": "89dd8e4b4994f9b33f5dd2aed0847335c70c8947",
+          "md5": "e9f12b8f87703b78ec63734aa21223bc"
         }
       ]
     }
