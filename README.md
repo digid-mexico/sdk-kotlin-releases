@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ### 2. Agregar la dependencia en `build.gradle.kts` (módulo app)
 
 ```kotlin
-implementation("com.digid:digid-sdk:2.0.0")
+implementation("com.digid:digid-sdk:2.0.1")
 ```
 
 ### 3. Permisos en `AndroidManifest.xml`
@@ -50,13 +50,14 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 
 | Versión | Fecha      | Novedades                                                                          |
 |---------|------------|------------------------------------------------------------------------------------|
-| 2.0.0   | 2026-07-02 | Resultado KYC ampliado, descarga automática de imágenes y video, control de logs. **Cambios breaking** (ver migración). |
+| 2.0.1   | 2026-07-02 | Corrige un error de compilación de la 2.0.0. **Versión recomendada.**              |
+| 2.0.0   | 2026-07-02 | Resultado KYC ampliado, descarga automática de imágenes y video, control de logs. **Cambios breaking** (ver migración). *No usar — reemplazada por 2.0.1.* |
 | 1.3.0   | 2026-05-27 | Mejoras internas y de estabilidad                                                  |
 | 1.2.0   | 2026-05-27 | Correcciones de errores silenciosos y mejoras de estabilidad                       |
 | 1.1.0   | 2026-04-29 | Vista de Términos y Condiciones obligatoria (`DigidTermsConfig`)                    |
 | 1.0.0   | 2026-04-25 | Release inicial                                                                    |
 
-## Novedades de la 2.0.0
+## Novedades de la 2.0.x
 
 - **`KycResult` ampliado**: nuevos `status`, `ready`, `livenessMethod`, `ageEstimation`, `faceQuality`, `ipAnalysis` y `pdfUrl`.
 - **`KycDocument` más completo**: `personalNumber`, `dateOfIssue`, `placeOfBirth`, `age`, domicilio estructurado (`addressData`) y campos OCR adicionales (`extraFieldsJson`).
