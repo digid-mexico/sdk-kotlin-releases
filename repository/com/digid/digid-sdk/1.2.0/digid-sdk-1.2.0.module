@@ -1,0 +1,229 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.digid",
+    "module": "digid-sdk",
+    "version": "1.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.4.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.24"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "digid-sdk-1.2.0.aar",
+          "url": "digid-sdk-1.2.0.aar",
+          "size": 236182,
+          "sha512": "e4b0cd4b4f2d4c4410de5a559844ac98ade5c927c87e84bdb545401f9a5c3fcbbd2911a402be9ffa4c4322748024e16eca23801c2a37fc6b96a4891ec2caa0cb",
+          "sha256": "d504de8bc14ff27f4d6fd95318c5713f74b557264bdb3a0b7c4b29ee703df6ff",
+          "sha1": "355f206656e94e71ccd993c47cd59acfc853e6de",
+          "md5": "cda4e9ed5fdf9f70adc36ab45d490c55"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "1.9.24"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "androidx.security",
+          "module": "security-crypto",
+          "version": {
+            "requires": "1.1.0-alpha06"
+          }
+        },
+        {
+          "group": "me.didit",
+          "module": "didit-sdk",
+          "version": {
+            "requires": "3.4.3"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.24"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "digid-sdk-1.2.0.aar",
+          "url": "digid-sdk-1.2.0.aar",
+          "size": 236182,
+          "sha512": "e4b0cd4b4f2d4c4410de5a559844ac98ade5c927c87e84bdb545401f9a5c3fcbbd2911a402be9ffa4c4322748024e16eca23801c2a37fc6b96a4891ec2caa0cb",
+          "sha256": "d504de8bc14ff27f4d6fd95318c5713f74b557264bdb3a0b7c4b29ee703df6ff",
+          "sha1": "355f206656e94e71ccd993c47cd59acfc853e6de",
+          "md5": "cda4e9ed5fdf9f70adc36ab45d490c55"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "digid-sdk-1.2.0-sources.jar",
+          "url": "digid-sdk-1.2.0-sources.jar",
+          "size": 61202,
+          "sha512": "ab0fcf810012c9cf92cf8cb4d89d267ae935cf1fad039e29e9926e31b57546c38d765b84d9c1535cac3e7fd11c60eeb35cc2ed352f286dcc9f687af98ceb8969",
+          "sha256": "a87c49efc3712091fe7e05c9e6e0507fd110f8cc71e90b081d5cd5e2031aec54",
+          "sha1": "d617592f6db18e8dca85362cf85b55f89575860c",
+          "md5": "8f142ead225c5b5ed880cc47d70e6788"
+        }
+      ]
+    }
+  ]
+}
