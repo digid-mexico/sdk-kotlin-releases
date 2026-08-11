@@ -1,0 +1,83 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.squareup.moshi",
+      "module" : "moshi-kotlin",
+      "version" : {
+        "requires" : "1.11.0"
+      }
+    } ],
+    "files" : [ {
+      "name" : "message-adapter-moshi-1.0.2.jar",
+      "url" : "message-adapter-moshi-1.0.2.jar",
+      "size" : 8345,
+      "sha512" : "eb817cf86dcbf7691211a13fad2b059020fabaab6c82a6784e0759622a163afbdff585417afc1cc7c81de6c6b202c1d5d8ea9edc240e9d20d98aae578db8d911",
+      "sha256" : "76c338c79c698b20d40c1acb0c4ccc34ebc815e59a8a186a4e4137619432dee5",
+      "sha1" : "918172d8178eac3a9983158257b893dbb4193376",
+      "md5" : "a5c8053c4959d39b9cfeedec0b109521"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    }, {
+      "group" : "com.squareup.moshi",
+      "module" : "moshi-kotlin",
+      "version" : {
+        "requires" : "1.11.0"
+      }
+    } ],
+    "files" : [ {
+      "name" : "message-adapter-moshi-1.0.2.jar",
+      "url" : "message-adapter-moshi-1.0.2.jar",
+      "size" : 8345,
+      "sha512" : "eb817cf86dcbf7691211a13fad2b059020fabaab6c82a6784e0759622a163afbdff585417afc1cc7c81de6c6b202c1d5d8ea9edc240e9d20d98aae578db8d911",
+      "sha256" : "76c338c79c698b20d40c1acb0c4ccc34ebc815e59a8a186a4e4137619432dee5",
+      "sha1" : "918172d8178eac3a9983158257b893dbb4193376",
+      "md5" : "a5c8053c4959d39b9cfeedec0b109521"
+    } ]
+  } ]
+}

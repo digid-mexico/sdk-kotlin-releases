@@ -1,0 +1,104 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.0.2"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "kbase58",
+    "version" : "0.4",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.localToProject" : "public",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "files" : [ {
+      "name" : "kbase58-0.4.jar",
+      "url" : "kbase58-0.4.jar",
+      "size" : 5352,
+      "sha512" : "a6a39a503f76bc21a4a5bef11a2d5429c5fd93ffeb62ca7a3dea9d175606323096799ebe810cfde473e0ec1f8a2a800bff1fd44dbe96a61e958c68695c61807d",
+      "sha256" : "2df7cd913cf2cf0c5d36120ba1307983adcc2ac1a24e722dae75d18216649ba5",
+      "sha1" : "d5b7bc804b26a1b624037e632e68c223b8aec7cc",
+      "md5" : "7515eba9a7099d3a677b09651852d502"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.localToProject" : "public",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "com.github.komputing.khash",
+      "module" : "sha256",
+      "version" : {
+        "requires" : "1.1.1"
+      }
+    } ],
+    "files" : [ {
+      "name" : "kbase58-0.4.jar",
+      "url" : "kbase58-0.4.jar",
+      "size" : 5352,
+      "sha512" : "a6a39a503f76bc21a4a5bef11a2d5429c5fd93ffeb62ca7a3dea9d175606323096799ebe810cfde473e0ec1f8a2a800bff1fd44dbe96a61e958c68695c61807d",
+      "sha256" : "2df7cd913cf2cf0c5d36120ba1307983adcc2ac1a24e722dae75d18216649ba5",
+      "sha1" : "d5b7bc804b26a1b624037e632e68c223b8aec7cc",
+      "md5" : "7515eba9a7099d3a677b09651852d502"
+    } ]
+  }, {
+    "name" : "javadocElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "javadoc",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "kbase58-0.4.jar",
+      "url" : "kbase58-0.4.jar",
+      "size" : 261,
+      "sha512" : "a62aebce56209c67fc667e4efae806581a7a4af1ce50daea9e258d737aaa0ef6cd59c6ce99e0ecb5defbac64d259bddbf0e2873abb702cd5eee25188af5e1362",
+      "sha256" : "12380ba6194ba124072cb47d3d6c3713e583b52a8e27187ead9f59d4b8800dc9",
+      "sha1" : "6f426aa4914a842741c3dae4350c30904673b39e",
+      "md5" : "41d54daeae93348a72bf5e4a36376ff2"
+    } ]
+  }, {
+    "name" : "sourcesElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "sources",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "kbase58-0.4.jar",
+      "url" : "kbase58-0.4.jar",
+      "size" : 2899,
+      "sha512" : "80722199203249ff4cf342fd6597df0f842477e7dd50bf4d432619688d0c216b23ce57d044dd656a5d5ee80b1ac531740a4eefaf80d342cb8583c23e1fcdb027",
+      "sha256" : "b69aad990f101c3fe84b8f2ca4f682335cbaa67bf9815030a7b36b9fa9e4d486",
+      "sha1" : "6f03a5303528870c7c0e09934ddf8cc14825c788",
+      "md5" : "41cb520b7b1a23b9ea7fb60c43bfbc1a"
+    } ]
+  } ]
+}

@@ -1,0 +1,76 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.0.2"
+    }
+  },
+  "component" : {
+    "url" : "../../khash/1.1.1/khash-1.1.1.module",
+    "group" : "com.github.komputing",
+    "module" : "khash",
+    "version" : "1.1.1",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "jvmApiElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "sha256-jvm-1.1.1.jar",
+      "url" : "sha256-jvm-1.1.1.jar",
+      "size" : 10463,
+      "sha512" : "1437e5f02e723f5f7da23b9ac03579080575894c8a2bc147340c371eb82c5a88334c67cd75d2d3c5f1c5af8065106bc083a0b14d3b6634168f7dd2376b3f7ea2",
+      "sha256" : "bf04051d72ac135017929a69aec97534c78aaa7b103d363fce24eb4b32a35473",
+      "sha1" : "b943fddc2262e024c73d94fbd49c7183110c7ba5",
+      "md5" : "d9b2f5a9aa84ace0ce0a3ec629a2a4fc"
+    } ]
+  }, {
+    "name" : "jvmRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "sha256-jvm-1.1.1.jar",
+      "url" : "sha256-jvm-1.1.1.jar",
+      "size" : 10463,
+      "sha512" : "1437e5f02e723f5f7da23b9ac03579080575894c8a2bc147340c371eb82c5a88334c67cd75d2d3c5f1c5af8065106bc083a0b14d3b6634168f7dd2376b3f7ea2",
+      "sha256" : "bf04051d72ac135017929a69aec97534c78aaa7b103d363fce24eb4b32a35473",
+      "sha1" : "b943fddc2262e024c73d94fbd49c7183110c7ba5",
+      "md5" : "d9b2f5a9aa84ace0ce0a3ec629a2a4fc"
+    } ]
+  } ]
+}

@@ -1,0 +1,110 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.3.3"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "kethereum",
+    "version" : "0.86.0",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "files" : [ {
+      "name" : "keccak_shortcut-0.86.0.jar",
+      "url" : "keccak_shortcut-0.86.0.jar",
+      "size" : 1728,
+      "sha512" : "fe33d30692029c3141370c0a9feb042680cf01f7f9f59451031d231a71ba08902f679667edcfb8c7c095025bc100967bbf5fbcf9bd1f9d2c19b6ba7d60799f3b",
+      "sha256" : "874ff0f60cf4304a052dc1e6a7018faaa82d8af68dd718acf5e220eb6bc19f09",
+      "sha1" : "ab02db805fe3239e74a5f46f41c1112919f35323",
+      "md5" : "75c00b34376b32995356522c0036832a"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.github.komputing",
+      "module" : "khex",
+      "version" : {
+        "requires" : "1.1.2"
+      }
+    }, {
+      "group" : "com.github.komputing.khash",
+      "module" : "keccak",
+      "version" : {
+        "requires" : "1.1.1"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib",
+      "version" : {
+        "requires" : "1.6.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "keccak_shortcut-0.86.0.jar",
+      "url" : "keccak_shortcut-0.86.0.jar",
+      "size" : 1728,
+      "sha512" : "fe33d30692029c3141370c0a9feb042680cf01f7f9f59451031d231a71ba08902f679667edcfb8c7c095025bc100967bbf5fbcf9bd1f9d2c19b6ba7d60799f3b",
+      "sha256" : "874ff0f60cf4304a052dc1e6a7018faaa82d8af68dd718acf5e220eb6bc19f09",
+      "sha1" : "ab02db805fe3239e74a5f46f41c1112919f35323",
+      "md5" : "75c00b34376b32995356522c0036832a"
+    } ]
+  }, {
+    "name" : "sourcesElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "sources",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "keccak_shortcut-0.86.0.jar",
+      "url" : "keccak_shortcut-0.86.0.jar",
+      "size" : 910,
+      "sha512" : "76627e53cb4879f82e8d288a55bba2f08fcd32c4b52210609858fd553c81a66d479a5acb7fab16bf2fb6097f1a8f1fad6758fb946acf93b22a6272603d312314",
+      "sha256" : "4903f74431e0ab3e6724c02e4bdd44b708c1f18129ddc6bb0211587be1bc52fa",
+      "sha1" : "99f51fcb688fddfcca00e922b0e208b745e0ea9b",
+      "md5" : "e97b25c21478c77f9ab8a7b077d181e7"
+    } ]
+  }, {
+    "name" : "javadocElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "javadoc",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "keccak_shortcut-0.86.0.jar",
+      "url" : "keccak_shortcut-0.86.0.jar",
+      "size" : 261,
+      "sha512" : "a2b765fc7ccbc0c409a4ed0ada725724cbd805389a39977a60a2d72ef144be1a1fc267942b92afc14060bbb1a720f2ebbd6ee2a573a621a5aea5816c3efa4bc2",
+      "sha256" : "80d81120f32b96088a36ed06dc70cd9da860314a33a3e91dc50e6b745e681d7b",
+      "sha1" : "3e18d320091611bbb364e1f5b6a89ddae04c0eb7",
+      "md5" : "01198ab18e79436042554ff3ce9416fb"
+    } ]
+  } ]
+}

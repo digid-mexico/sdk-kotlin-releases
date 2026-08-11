@@ -1,0 +1,101 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "com.squareup.okhttp3",
+      "module" : "okhttp",
+      "version" : {
+        "requires" : "4.9.1"
+      }
+    } ],
+    "files" : [ {
+      "name" : "websocket-okhttp-1.0.2.jar",
+      "url" : "websocket-okhttp-1.0.2.jar",
+      "size" : 15668,
+      "sha512" : "3e0c690d9c56bf08098f70b67410a49e9c9f3937bd761e3f94cd86607df808e0d923b21ae8a3bbbb4f208be9483d310cda08289c7805f74ff25ffcf1d0609f1a",
+      "sha256" : "bf8523a6f43e6cf9be02d578f2c771aad725b57c84bbfc33c8f8a2f78cb5507b",
+      "sha1" : "64babf614c9ed0e2156db48aceb16d6dcebbac20",
+      "md5" : "a568e26cc5977b220171777b057e9be5"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core-internal",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "io.reactivex.rxjava2",
+      "module" : "rxjava",
+      "version" : {
+        "requires" : "2.1.16"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    }, {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "com.squareup.okhttp3",
+      "module" : "okhttp",
+      "version" : {
+        "requires" : "4.9.1"
+      }
+    } ],
+    "files" : [ {
+      "name" : "websocket-okhttp-1.0.2.jar",
+      "url" : "websocket-okhttp-1.0.2.jar",
+      "size" : 15668,
+      "sha512" : "3e0c690d9c56bf08098f70b67410a49e9c9f3937bd761e3f94cd86607df808e0d923b21ae8a3bbbb4f208be9483d310cda08289c7805f74ff25ffcf1d0609f1a",
+      "sha256" : "bf8523a6f43e6cf9be02d578f2c771aad725b57c84bbfc33c8f8a2f78cb5507b",
+      "sha1" : "64babf614c9ed0e2156db48aceb16d6dcebbac20",
+      "md5" : "a568e26cc5977b220171777b057e9be5"
+    } ]
+  } ]
+}

@@ -1,0 +1,82 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.0.2"
+    }
+  },
+  "component" : {
+    "url" : "../../khash/1.1.1/khash-1.1.1.module",
+    "group" : "com.github.komputing",
+    "module" : "khash",
+    "version" : "1.1.1",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "jvmApiElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "keccak-jvm-1.1.1.jar",
+      "url" : "keccak-jvm-1.1.1.jar",
+      "size" : 10641,
+      "sha512" : "3c54b0b8bf51b3791ff1d74f51e51c3f66dd2394fee1c939b08bff3537f4f60f55f30e6de7d18d40ff64e68c9e48de36bb77ab13f1e7ee5788d4feb3879be190",
+      "sha256" : "939dd4fe922ece9f9fe112339d54124e176ee67988c72e68f4a96d72c81b8a42",
+      "sha1" : "78e669374b3aa7900a85c00b8ae962feed7fd4f6",
+      "md5" : "e4017ebfab555f126135e1ec2ea56ce9"
+    } ]
+  }, {
+    "name" : "jvmRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "com.ionspin.kotlin",
+      "module" : "bignum",
+      "version" : {
+        "requires" : "0.3.1"
+      }
+    } ],
+    "files" : [ {
+      "name" : "keccak-jvm-1.1.1.jar",
+      "url" : "keccak-jvm-1.1.1.jar",
+      "size" : 10641,
+      "sha512" : "3c54b0b8bf51b3791ff1d74f51e51c3f66dd2394fee1c939b08bff3537f4f60f55f30e6de7d18d40ff64e68c9e48de36bb77ab13f1e7ee5788d4feb3879be190",
+      "sha256" : "939dd4fe922ece9f9fe112339d54124e176ee67988c72e68f4a96d72c81b8a42",
+      "sha1" : "78e669374b3aa7900a85c00b8ae962feed7fd4f6",
+      "md5" : "e4017ebfab555f126135e1ec2ea56ce9"
+    } ]
+  } ]
+}

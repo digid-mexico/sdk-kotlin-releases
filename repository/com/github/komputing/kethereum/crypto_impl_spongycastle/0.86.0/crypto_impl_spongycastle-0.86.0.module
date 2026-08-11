@@ -1,0 +1,122 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.3.3"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "kethereum",
+    "version" : "0.86.0",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "files" : [ {
+      "name" : "crypto_impl_spongycastle-0.86.0.jar",
+      "url" : "crypto_impl_spongycastle-0.86.0.jar",
+      "size" : 17825,
+      "sha512" : "0481f698bec321301a4ef8985519d606397e11b4c94c4abd3657afd2d0c1b57c9ac8937bcd3723a8b463bee427876ccada2dc432a1144e1e90b1b9fe35626db4",
+      "sha256" : "167197f0e17aa79bfdfaa4482ab191cefceca709b62a7f2731dee59677e6c105",
+      "sha1" : "1fb1db44ef6be79d9b0d98641ca076a782c019f6",
+      "md5" : "fe52c2470c27b46f8b4a2bbb9a275e89"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.madgag.spongycastle",
+      "module" : "prov",
+      "version" : {
+        "requires" : "1.58.0.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "crypto_api",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "crypto_impl_java_provider",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "model",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib",
+      "version" : {
+        "requires" : "1.6.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "crypto_impl_spongycastle-0.86.0.jar",
+      "url" : "crypto_impl_spongycastle-0.86.0.jar",
+      "size" : 17825,
+      "sha512" : "0481f698bec321301a4ef8985519d606397e11b4c94c4abd3657afd2d0c1b57c9ac8937bcd3723a8b463bee427876ccada2dc432a1144e1e90b1b9fe35626db4",
+      "sha256" : "167197f0e17aa79bfdfaa4482ab191cefceca709b62a7f2731dee59677e6c105",
+      "sha1" : "1fb1db44ef6be79d9b0d98641ca076a782c019f6",
+      "md5" : "fe52c2470c27b46f8b4a2bbb9a275e89"
+    } ]
+  }, {
+    "name" : "sourcesElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "sources",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "crypto_impl_spongycastle-0.86.0.jar",
+      "url" : "crypto_impl_spongycastle-0.86.0.jar",
+      "size" : 7712,
+      "sha512" : "58bcadbc607b693623b01d3152863e78bb3b5629ca70f69537adb42b521e5fc1d2a6d86c7e6c0d6e687d8251f34497beb32f9b7a146c8564dcc878b16a060f21",
+      "sha256" : "73b2b1500f42baddfd9b1cf0479cc2a735ea3d95930f15fd5e67c7808ae941ed",
+      "sha1" : "01a46bccfd012dae1891c2c454b343428b310084",
+      "md5" : "aee4577ab33f40efa16732bc23f963ba"
+    } ]
+  }, {
+    "name" : "javadocElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "javadoc",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "crypto_impl_spongycastle-0.86.0.jar",
+      "url" : "crypto_impl_spongycastle-0.86.0.jar",
+      "size" : 261,
+      "sha512" : "45f93f7b1a7b1f042dc905d9f3e67c6214a62fba95681342342c0861a55dcdda53096e840f28fd0272b041ebeaf8164080d2fbbd47b8fae78990af8e0d054ec3",
+      "sha256" : "516dcd1cd4e3ac0c72fa1b595d678359587c73920c3a1efe1af36a800f88b1bd",
+      "sha1" : "d512f98d4313cfa1d7b5672425f1989031683390",
+      "md5" : "8c201dbcb389544b7de8a7789663054d"
+    } ]
+  } ]
+}

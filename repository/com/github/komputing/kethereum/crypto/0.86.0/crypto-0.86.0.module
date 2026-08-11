@@ -1,0 +1,134 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.3.3"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "kethereum",
+    "version" : "0.86.0",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "files" : [ {
+      "name" : "crypto-0.86.0.jar",
+      "url" : "crypto-0.86.0.jar",
+      "size" : 13794,
+      "sha512" : "10ed14b1e2d5f95a218439a2836d9a5c4f50c822381576845c143240bb44ea79211289b3c3374d7dfddb642f52b8428dcfb6358666fe30ac908dbda8cf4acc7d",
+      "sha256" : "ec8256a77c6c94244b2d954e63129e6f3d452d4fe9c0edfb1cc15017598c25ee",
+      "sha1" : "2487b843547faa14688230dc313e25dbf47dc8d5",
+      "md5" : "e32c42c9deed22ad0a7e9f7bc7f3b4da"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "model",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "keccak_shortcut",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "extensions_kotlin",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "crypto_api",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing",
+      "module" : "khex",
+      "version" : {
+        "requires" : "1.1.2"
+      }
+    }, {
+      "group" : "org.slf4j",
+      "module" : "slf4j-api",
+      "version" : {
+        "requires" : "1.7.32"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib",
+      "version" : {
+        "requires" : "1.6.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "crypto-0.86.0.jar",
+      "url" : "crypto-0.86.0.jar",
+      "size" : 13794,
+      "sha512" : "10ed14b1e2d5f95a218439a2836d9a5c4f50c822381576845c143240bb44ea79211289b3c3374d7dfddb642f52b8428dcfb6358666fe30ac908dbda8cf4acc7d",
+      "sha256" : "ec8256a77c6c94244b2d954e63129e6f3d452d4fe9c0edfb1cc15017598c25ee",
+      "sha1" : "2487b843547faa14688230dc313e25dbf47dc8d5",
+      "md5" : "e32c42c9deed22ad0a7e9f7bc7f3b4da"
+    } ]
+  }, {
+    "name" : "sourcesElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "sources",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "crypto-0.86.0.jar",
+      "url" : "crypto-0.86.0.jar",
+      "size" : 5831,
+      "sha512" : "98facde9a6edef74fa49248654e8b7f8de7dbad9d7e54e0310624d9deeccbbb292b6e70b8a123688ec8864a96a0b0b8890b7f7af8eed9d5ceebe52adb8af97d5",
+      "sha256" : "1053301df00737f81e3a3f40f952e9d1667bd32cc9379a54b769b5cfe29798a0",
+      "sha1" : "57b2777fdbe6855ac11b2e728b583caad5b760fe",
+      "md5" : "da0635d77f16caa6676f3adbbd36f0f7"
+    } ]
+  }, {
+    "name" : "javadocElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "javadoc",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "crypto-0.86.0.jar",
+      "url" : "crypto-0.86.0.jar",
+      "size" : 261,
+      "sha512" : "6877241de4dccb13d98c9a4d6ec0693ec3411da120071c0eb9d339e008aa4d07057ad2cff67e16ddd8bf97d532521875db46ee0bc9e676ea7a178ce89e0035da",
+      "sha256" : "a601dc0a541bdd910027189d69cbb8ddeee8fab6a527715945e3d7629da21462",
+      "sha1" : "1d7d46209441ddcf9a8ad460b35cc22686f482c7",
+      "md5" : "53bb82097ee0d5f25dfa1b993f4d3ffa"
+    } ]
+  } ]
+}

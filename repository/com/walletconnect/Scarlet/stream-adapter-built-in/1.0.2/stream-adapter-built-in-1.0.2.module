@@ -1,0 +1,70 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "files" : [ {
+      "name" : "stream-adapter-built-in-1.0.2.jar",
+      "url" : "stream-adapter-built-in-1.0.2.jar",
+      "size" : 3242,
+      "sha512" : "615998ce8782dddd96f4142526c09c51a49b9da9b340cf8e357d296e4e8d7267851bff7fc100071b8329b93e97bf3f4189ab3e1cb4f6966c35936474a91fad6f",
+      "sha256" : "05bc74085c72cf54993a095b0630719bd4f05f11c36d4d6a2b453560430ae15f",
+      "sha1" : "fcb493f08d92cba2b7d5c0aa862ffc04df9bcf37",
+      "md5" : "0393ef1abd6098963080ed5d2341383c"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    } ],
+    "files" : [ {
+      "name" : "stream-adapter-built-in-1.0.2.jar",
+      "url" : "stream-adapter-built-in-1.0.2.jar",
+      "size" : 3242,
+      "sha512" : "615998ce8782dddd96f4142526c09c51a49b9da9b340cf8e357d296e4e8d7267851bff7fc100071b8329b93e97bf3f4189ab3e1cb4f6966c35936474a91fad6f",
+      "sha256" : "05bc74085c72cf54993a095b0630719bd4f05f11c36d4d6a2b453560430ae15f",
+      "sha1" : "fcb493f08d92cba2b7d5c0aa862ffc04df9bcf37",
+      "md5" : "0393ef1abd6098963080ed5d2341383c"
+    } ]
+  } ]
+}

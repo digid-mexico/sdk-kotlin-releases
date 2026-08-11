@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- do_not_remove: published-with-gradle-metadata -->
+<modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.komputing.khex</groupId>
+  <artifactId>extensions-jvm</artifactId>
+  <version>1.1.2</version>
+  <name>komputing/KHex</name>
+  <description>Kotlin library to handle hexadecimal value representations</description>
+  <url>https://github.com/komputing/KHex</url>
+  <inceptionYear>2017</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://api.github.com/licenses/mit</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>komputing</id>
+      <name>Komputing</name>
+      <email></email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git://github.com/komputing/KHex.git</connection>
+    <developerConnection>scm:git://github.com/komputing/KHex.git</developerConnection>
+    <url>git://github.com/komputing/KHex.git</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib-jdk8</artifactId>
+      <version>1.5.10</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib-common</artifactId>
+      <version>1.5.10</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.komputing.khex</groupId>
+      <artifactId>core-jvm</artifactId>
+      <version>1.1.2</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

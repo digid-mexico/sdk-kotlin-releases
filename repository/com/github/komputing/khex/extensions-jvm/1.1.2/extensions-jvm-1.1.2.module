@@ -1,0 +1,82 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.0.2"
+    }
+  },
+  "component" : {
+    "url" : "../../khex/1.1.2/khex-1.1.2.module",
+    "group" : "com.github.komputing",
+    "module" : "khex",
+    "version" : "1.1.2",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "jvmApiElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "extensions-jvm-1.1.2.jar",
+      "url" : "extensions-jvm-1.1.2.jar",
+      "size" : 5910,
+      "sha512" : "20cd582caa7cb15c7d36f2678226d7821639754c6154a941e8da6526bb794d158d6b1d312a262fb4940119fc28a2bbd240655eff0341b9fdd1e1fa9f36b93da8",
+      "sha256" : "685807fef661c18c63a1456e1d146c83e13588367941258666f65c0ca078143d",
+      "sha1" : "72f9cd9f4fa3f4104ae126a1063e91f9b4917ef6",
+      "md5" : "86119bb117532e58c9b0f8cffd921b19"
+    } ]
+  }, {
+    "name" : "jvmRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "com.github.komputing.khex",
+      "module" : "core",
+      "version" : {
+        "requires" : "1.1.2"
+      }
+    } ],
+    "files" : [ {
+      "name" : "extensions-jvm-1.1.2.jar",
+      "url" : "extensions-jvm-1.1.2.jar",
+      "size" : 5910,
+      "sha512" : "20cd582caa7cb15c7d36f2678226d7821639754c6154a941e8da6526bb794d158d6b1d312a262fb4940119fc28a2bbd240655eff0341b9fdd1e1fa9f36b93da8",
+      "sha256" : "685807fef661c18c63a1456e1d146c83e13588367941258666f65c0ca078143d",
+      "sha1" : "72f9cd9f4fa3f4104ae126a1063e91f9b4917ef6",
+      "md5" : "86119bb117532e58c9b0f8cffd921b19"
+    } ]
+  } ]
+}

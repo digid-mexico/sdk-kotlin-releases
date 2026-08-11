@@ -1,0 +1,139 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.0.2"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "khash",
+    "version" : "1.1.1",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "metadataApiElements",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-metadata",
+      "org.jetbrains.kotlin.platform.type" : "common"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "keccak-1.1.1.jar",
+      "url" : "keccak-1.1.1.jar",
+      "size" : 5569,
+      "sha512" : "8ffdffa4bc254b0ce8bee16ea0ea90c94354357bf0d2c7dea06eb1b1aeb52f9ee70137d3a1822a4f4984472a06f4e9c0a943cdf97130f93a23b3f13df6afa1c5",
+      "sha256" : "e53cca668c9a5dd49f78a0d1f12596c44031466eec85fe6203608a292820dc62",
+      "sha1" : "ce12377d1280b2fd8d325cc639929b604e899016",
+      "md5" : "98067684c81204abf294e17fbc73c8c0"
+    } ]
+  }, {
+    "name" : "commonMainMetadataElements",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.platform.type" : "common"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "keccak-1.1.1.jar",
+      "url" : "keccak-1.1.1.jar",
+      "size" : 3406,
+      "sha512" : "a36a602d038d4638fdc586dd46991c7481786421275362e0b3d330124478a37faaeb37242a89f34dad7ca4dc57c43b81a6046b5c9cfca8bb29ea53c3a03737d0",
+      "sha256" : "bcc9552dd1d62523ed58125ac88b6647304c413e4f4bd38dbe46c994b29b7d9d",
+      "sha1" : "5e676923d378d8f2584317b03bc9b39c8b98e254",
+      "md5" : "1e6dbc08a3fc1d8490f7e391c7e06cbf"
+    } ]
+  }, {
+    "name" : "jsLegacyApiElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.js.compiler" : "legacy",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../keccak-js/1.1.1/keccak-js-1.1.1.module",
+      "group" : "com.github.komputing.khash",
+      "module" : "keccak-js",
+      "version" : "1.1.1"
+    }
+  }, {
+    "name" : "jsLegacyRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-runtime",
+      "org.jetbrains.kotlin.js.compiler" : "legacy",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../keccak-js/1.1.1/keccak-js-1.1.1.module",
+      "group" : "com.github.komputing.khash",
+      "module" : "keccak-js",
+      "version" : "1.1.1"
+    }
+  }, {
+    "name" : "jsIrApiElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.js.compiler" : "ir",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../keccak-js/1.1.1/keccak-js-1.1.1.module",
+      "group" : "com.github.komputing.khash",
+      "module" : "keccak-js",
+      "version" : "1.1.1"
+    }
+  }, {
+    "name" : "jsIrRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-runtime",
+      "org.jetbrains.kotlin.js.compiler" : "ir",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../keccak-js/1.1.1/keccak-js-1.1.1.module",
+      "group" : "com.github.komputing.khash",
+      "module" : "keccak-js",
+      "version" : "1.1.1"
+    }
+  }, {
+    "name" : "jvmApiElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "available-at" : {
+      "url" : "../../keccak-jvm/1.1.1/keccak-jvm-1.1.1.module",
+      "group" : "com.github.komputing.khash",
+      "module" : "keccak-jvm",
+      "version" : "1.1.1"
+    }
+  }, {
+    "name" : "jvmRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "available-at" : {
+      "url" : "../../keccak-jvm/1.1.1/keccak-jvm-1.1.1.module",
+      "group" : "com.github.komputing.khash",
+      "module" : "keccak-jvm",
+      "version" : "1.1.1"
+    }
+  } ]
+}

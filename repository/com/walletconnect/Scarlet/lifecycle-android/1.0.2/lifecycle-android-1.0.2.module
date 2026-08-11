@@ -1,0 +1,88 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "releaseApiPublication",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.libraryelements" : "aar",
+      "org.gradle.usage" : "java-api"
+    },
+    "files" : [ {
+      "name" : "lifecycle-android-1.0.2.aar",
+      "url" : "lifecycle-android-1.0.2.aar",
+      "size" : 28234,
+      "sha512" : "333dea5803f0ce9ddfa1f375731a051bcdca2772db5893d3da4ead77325a033016ec3d3e287063f46defb8c58cf32201ce7de5a6dfe437186c7a46d204fc207f",
+      "sha256" : "c7f20eb69bfd58b1370f42a3d1418c5dda455e6b6e0d6312af9adb5fcfa4219d",
+      "sha1" : "ae490e3bc1e83e1bec303ef7669837e34141d3a8",
+      "md5" : "254c3e7baad483895b096fd63be40da7"
+    } ]
+  }, {
+    "name" : "releaseRuntimePublication",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.libraryelements" : "aar",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "io.reactivex.rxjava2",
+      "module" : "rxjava",
+      "version" : {
+        "requires" : "2.1.16"
+      }
+    }, {
+      "group" : "io.reactivex.rxjava2",
+      "module" : "rxkotlin",
+      "version" : {
+        "requires" : "2.2.0"
+      }
+    }, {
+      "group" : "androidx.appcompat",
+      "module" : "appcompat",
+      "version" : {
+        "requires" : "1.2.0"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlinx",
+      "module" : "kotlinx-coroutines-core",
+      "version" : {
+        "requires" : "1.7.1"
+      }
+    } ],
+    "files" : [ {
+      "name" : "lifecycle-android-1.0.2.aar",
+      "url" : "lifecycle-android-1.0.2.aar",
+      "size" : 28234,
+      "sha512" : "333dea5803f0ce9ddfa1f375731a051bcdca2772db5893d3da4ead77325a033016ec3d3e287063f46defb8c58cf32201ce7de5a6dfe437186c7a46d204fc207f",
+      "sha256" : "c7f20eb69bfd58b1370f42a3d1418c5dda455e6b6e0d6312af9adb5fcfa4219d",
+      "sha1" : "ae490e3bc1e83e1bec303ef7669837e34141d3a8",
+      "md5" : "254c3e7baad483895b096fd63be40da7"
+    } ]
+  } ]
+}

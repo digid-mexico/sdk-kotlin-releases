@@ -1,0 +1,76 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.0.2"
+    }
+  },
+  "component" : {
+    "url" : "../../khash/1.1.1/khash-1.1.1.module",
+    "group" : "com.github.komputing",
+    "module" : "khash",
+    "version" : "1.1.1",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "jvmApiElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "ripemd160-jvm-1.1.1.jar",
+      "url" : "ripemd160-jvm-1.1.1.jar",
+      "size" : 8308,
+      "sha512" : "bd6c8d12430233361af03b31743a246bfed11c053fd0091bddac5fa6ddb4d306d958c708b02d9ccb8f674e4e4ae79e25e55620ef895c09ceb80bf2ea060d5ca0",
+      "sha256" : "2d06a30169e93aedece5b6f468ee02f013852b1df3153cb40bdc3e585bc6e126",
+      "sha1" : "0844d627ef56d7beeb423190949c0892205f9be6",
+      "md5" : "dd139c98f13924187341655d34b8e31e"
+    } ]
+  }, {
+    "name" : "jvmRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "ripemd160-jvm-1.1.1.jar",
+      "url" : "ripemd160-jvm-1.1.1.jar",
+      "size" : 8308,
+      "sha512" : "bd6c8d12430233361af03b31743a246bfed11c053fd0091bddac5fa6ddb4d306d958c708b02d9ccb8f674e4e4ae79e25e55620ef895c09ceb80bf2ea060d5ca0",
+      "sha256" : "2d06a30169e93aedece5b6f468ee02f013852b1df3153cb40bdc3e585bc6e126",
+      "sha1" : "0844d627ef56d7beeb423190949c0892205f9be6",
+      "md5" : "dd139c98f13924187341655d34b8e31e"
+    } ]
+  } ]
+}

@@ -1,0 +1,104 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.3.3"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "kethereum",
+    "version" : "0.86.0",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "files" : [ {
+      "name" : "crypto_impl_java_provider-0.86.0.jar",
+      "url" : "crypto_impl_java_provider-0.86.0.jar",
+      "size" : 5331,
+      "sha512" : "b86ddb0853436c55bd232edcd74546dc814d19111b1b0597b69c0d2f30cc56e623d8ded1b151bd4942e344f90cd7b82d1391ac26a836347ebbfa9e50f62f6123",
+      "sha256" : "df2d4f50d023a8f408778799ff4aade51c5cee66043be6ff116990f9e86ad8b3",
+      "sha1" : "b79126177c4084cc5313787c3e20f07f76747eb7",
+      "md5" : "c27cf9fd3f683151ca6710d13e6f1619"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "crypto_api",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib",
+      "version" : {
+        "requires" : "1.6.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "crypto_impl_java_provider-0.86.0.jar",
+      "url" : "crypto_impl_java_provider-0.86.0.jar",
+      "size" : 5331,
+      "sha512" : "b86ddb0853436c55bd232edcd74546dc814d19111b1b0597b69c0d2f30cc56e623d8ded1b151bd4942e344f90cd7b82d1391ac26a836347ebbfa9e50f62f6123",
+      "sha256" : "df2d4f50d023a8f408778799ff4aade51c5cee66043be6ff116990f9e86ad8b3",
+      "sha1" : "b79126177c4084cc5313787c3e20f07f76747eb7",
+      "md5" : "c27cf9fd3f683151ca6710d13e6f1619"
+    } ]
+  }, {
+    "name" : "sourcesElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "sources",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "crypto_impl_java_provider-0.86.0.jar",
+      "url" : "crypto_impl_java_provider-0.86.0.jar",
+      "size" : 2044,
+      "sha512" : "2cf113bf82a443b936d9fd4079023c4acfa0de4df699aafbbf8e55d0c98ce34ece0d4cdaa78c806f72dff6fae626ec9e7dc6f66ab99ad6c3fe9e27fe9a7a55ae",
+      "sha256" : "adb1394028fa7bc218ae49aaab3060bc361253e197faea4b7251bca6dbaef3e4",
+      "sha1" : "f30362c94e693e291ef4864d21a906f5a6005419",
+      "md5" : "0301ae10e3af94672850b80caa8cda84"
+    } ]
+  }, {
+    "name" : "javadocElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "javadoc",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "crypto_impl_java_provider-0.86.0.jar",
+      "url" : "crypto_impl_java_provider-0.86.0.jar",
+      "size" : 261,
+      "sha512" : "45f93f7b1a7b1f042dc905d9f3e67c6214a62fba95681342342c0861a55dcdda53096e840f28fd0272b041ebeaf8164080d2fbbd47b8fae78990af8e0d054ec3",
+      "sha256" : "516dcd1cd4e3ac0c72fa1b595d678359587c73920c3a1efe1af36a800f88b1bd",
+      "sha1" : "d512f98d4313cfa1d7b5672425f1989031683390",
+      "md5" : "8c201dbcb389544b7de8a7789663054d"
+    } ]
+  } ]
+}

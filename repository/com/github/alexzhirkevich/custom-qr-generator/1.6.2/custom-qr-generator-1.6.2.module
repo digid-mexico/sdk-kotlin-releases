@@ -1,0 +1,100 @@
+{
+  "formatVersion" : "1.1",
+  "component" : {
+    "group" : "com.github.alexzhirkevich",
+    "module" : "custom-qr-generator",
+    "version" : "1.6.2",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.4"
+    }
+  },
+  "variants" : [ {
+    "name" : "releaseVariantReleaseApiPublication",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.libraryelements" : "aar",
+      "org.gradle.usage" : "java-api"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.6.21"
+      }
+    } ],
+    "files" : [ {
+      "name" : "custom-qr-generator-1.6.2.aar",
+      "url" : "custom-qr-generator-1.6.2.aar",
+      "size" : 404553,
+      "sha512" : "913a8ce2c09f6c2d341116d34b36af6574a708a650f7e53ff3c03fa10a12efde7af1b7394c7b7510b951a9721096cc921f29226c87177d71d03f6432388782e1",
+      "sha256" : "8038f61c25db21e2b41a5acf203187984906a7032b7bbc761e16493816392aad",
+      "sha1" : "88baf9f6e503df9fb9c712099766542b7732848f",
+      "md5" : "a5c0e5ae5de992f20a42a87ccc82705a"
+    } ]
+  }, {
+    "name" : "releaseVariantReleaseRuntimePublication",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.libraryelements" : "aar",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk8",
+      "version" : {
+        "requires" : "1.6.21"
+      }
+    }, {
+      "group" : "androidx.core",
+      "module" : "core-ktx",
+      "version" : {
+        "requires" : "1.9.0"
+      }
+    }, {
+      "group" : "com.google.zxing",
+      "module" : "core",
+      "version" : {
+        "requires" : "3.5.1"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlinx",
+      "module" : "kotlinx-coroutines-android",
+      "version" : {
+        "requires" : "1.6.4"
+      }
+    } ],
+    "files" : [ {
+      "name" : "custom-qr-generator-1.6.2.aar",
+      "url" : "custom-qr-generator-1.6.2.aar",
+      "size" : 404553,
+      "sha512" : "913a8ce2c09f6c2d341116d34b36af6574a708a650f7e53ff3c03fa10a12efde7af1b7394c7b7510b951a9721096cc921f29226c87177d71d03f6432388782e1",
+      "sha256" : "8038f61c25db21e2b41a5acf203187984906a7032b7bbc761e16493816392aad",
+      "sha1" : "88baf9f6e503df9fb9c712099766542b7732848f",
+      "md5" : "a5c0e5ae5de992f20a42a87ccc82705a"
+    } ]
+  }, {
+    "name" : "releaseVariantReleaseSourcePublication",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "sources",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "custom-qr-generator-1.6.2.jar",
+      "url" : "custom-qr-generator-1.6.2.jar",
+      "size" : 63123,
+      "sha512" : "213c320606235e35ffdfc5a71a6863c94f74e86bbcd770dcd462019aac8a69a0918e5a97b9dc9f7953fbb6ebc8f3b2ea8cc24e72bba263fd7a46509890016d78",
+      "sha256" : "96882bb0fb4a6c366fe23a186eaf665d87c71b0a9f5b5aabdeb9598e45df24bd",
+      "sha1" : "fa2526446de691685b6ff6542444f932dd88c56e",
+      "md5" : "01c87783935115dcdb193713590d50ee"
+    } ]
+  } ]
+}

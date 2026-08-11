@@ -1,0 +1,83 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    } ],
+    "files" : [ {
+      "name" : "scarlet-core-internal-1.0.2.jar",
+      "url" : "scarlet-core-internal-1.0.2.jar",
+      "size" : 7429,
+      "sha512" : "c56384c8596856048385261dc4e55fec588cc6ee733a720b582d17b2c5b313cacecc42e8a153badfcbaaade528325c3b306fb385a5ff25525d11986a83a8be75",
+      "sha256" : "96951019decc8012ada970e0272b416fe5a245035392b42299d25bf6811de3df",
+      "sha1" : "8064d4630df15ebfbddc83eececf275f989855d7",
+      "md5" : "c46d4b239ba4ec8ddd100064c2ca5957"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "io.reactivex.rxjava2",
+      "module" : "rxjava",
+      "version" : {
+        "requires" : "2.1.16"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    }, {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    } ],
+    "files" : [ {
+      "name" : "scarlet-core-internal-1.0.2.jar",
+      "url" : "scarlet-core-internal-1.0.2.jar",
+      "size" : 7429,
+      "sha512" : "c56384c8596856048385261dc4e55fec588cc6ee733a720b582d17b2c5b313cacecc42e8a153badfcbaaade528325c3b306fb385a5ff25525d11986a83a8be75",
+      "sha256" : "96951019decc8012ada970e0272b416fe5a245035392b42299d25bf6811de3df",
+      "sha1" : "8064d4630df15ebfbddc83eececf275f989855d7",
+      "md5" : "c46d4b239ba4ec8ddd100064c2ca5957"
+    } ]
+  } ]
+}

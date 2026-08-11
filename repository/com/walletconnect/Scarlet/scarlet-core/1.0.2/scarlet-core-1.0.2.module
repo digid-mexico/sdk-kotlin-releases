@@ -1,0 +1,77 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.reactivestreams",
+      "module" : "reactive-streams",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    } ],
+    "files" : [ {
+      "name" : "scarlet-core-1.0.2.jar",
+      "url" : "scarlet-core-1.0.2.jar",
+      "size" : 39106,
+      "sha512" : "4f028d6c6a155f40b984c4781e56bafe750a5cdfdab40f214c8d92a0c468398a3f46c0b513ce68c5ccdc47b4ee233d52fe3f53da3e25cacf7e25e22f7dfa2835",
+      "sha256" : "093e6e3968374955507769162aada943467fce5c064504fb803fdab2e4299626",
+      "sha1" : "9a6cc04c3662bf136c66b50fb95da1bae3e63044",
+      "md5" : "c3936a71e6ba482b1378dbc0faa17e8c"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    }, {
+      "group" : "org.reactivestreams",
+      "module" : "reactive-streams",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    } ],
+    "files" : [ {
+      "name" : "scarlet-core-1.0.2.jar",
+      "url" : "scarlet-core-1.0.2.jar",
+      "size" : 39106,
+      "sha512" : "4f028d6c6a155f40b984c4781e56bafe750a5cdfdab40f214c8d92a0c468398a3f46c0b513ce68c5ccdc47b4ee233d52fe3f53da3e25cacf7e25e22f7dfa2835",
+      "sha256" : "093e6e3968374955507769162aada943467fce5c064504fb803fdab2e4299626",
+      "sha1" : "9a6cc04c3662bf136c66b50fb95da1bae3e63044",
+      "md5" : "c3936a71e6ba482b1378dbc0faa17e8c"
+    } ]
+  } ]
+}

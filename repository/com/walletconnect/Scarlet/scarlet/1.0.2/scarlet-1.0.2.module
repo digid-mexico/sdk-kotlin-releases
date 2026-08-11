@@ -1,0 +1,113 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    } ],
+    "files" : [ {
+      "name" : "scarlet-1.0.2.jar",
+      "url" : "scarlet-1.0.2.jar",
+      "size" : 173435,
+      "sha512" : "b6c47d8d5a63e4a8ce4bb873609788a0aab0458abda04432d0e8f385a1e2f69d27c38f41dc58065c87e322755215914e33adb986858f599909c388e36226f0da",
+      "sha256" : "43736cbb35eaa049769487d036fc439e90afcc58fdae3df906ff67db7c390ace",
+      "sha1" : "2a5e5502384ce15c427906a368d5c353ff54f3a1",
+      "md5" : "88e1dddfdfc98ab0a12003ad73d4e932"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core-internal",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "message-adapter-built-in",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "stream-adapter-built-in",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "com.tinder.statemachine",
+      "module" : "statemachine",
+      "version" : {
+        "requires" : "0.2.0"
+      }
+    }, {
+      "group" : "io.reactivex.rxjava2",
+      "module" : "rxjava",
+      "version" : {
+        "requires" : "2.1.16"
+      }
+    }, {
+      "group" : "io.reactivex.rxjava2",
+      "module" : "rxkotlin",
+      "version" : {
+        "requires" : "2.2.0"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    }, {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    } ],
+    "files" : [ {
+      "name" : "scarlet-1.0.2.jar",
+      "url" : "scarlet-1.0.2.jar",
+      "size" : 173435,
+      "sha512" : "b6c47d8d5a63e4a8ce4bb873609788a0aab0458abda04432d0e8f385a1e2f69d27c38f41dc58065c87e322755215914e33adb986858f599909c388e36226f0da",
+      "sha256" : "43736cbb35eaa049769487d036fc439e90afcc58fdae3df906ff67db7c390ace",
+      "sha1" : "2a5e5502384ce15c427906a368d5c353ff54f3a1",
+      "md5" : "88e1dddfdfc98ab0a12003ad73d4e932"
+    } ]
+  } ]
+}

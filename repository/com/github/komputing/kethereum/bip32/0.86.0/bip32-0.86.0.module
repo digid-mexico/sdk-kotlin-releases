@@ -1,0 +1,146 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.3.3"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "kethereum",
+    "version" : "0.86.0",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "files" : [ {
+      "name" : "bip32-0.86.0.jar",
+      "url" : "bip32-0.86.0.jar",
+      "size" : 15275,
+      "sha512" : "eafcd2da3e4f5ac55748030283b2516b7f75660c71383a4a7b5a8c85b4ec3daa9c42c8a1fc8abb00fece6de0f2c68ed6fe4269b3f00ce532cc5d51fc62eb402f",
+      "sha256" : "a8d51fa402221db9a65ac539c897c2c47935418a4e56e74b4d25fde09ad75e1e",
+      "sha1" : "cddb84dbfc98b38b5afd09b5f8616bf43df6a570",
+      "md5" : "c6a0c4724b0196bdc700622661f15df6"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "crypto",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "crypto_api",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "extensions_kotlin",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing.kethereum",
+      "module" : "model",
+      "version" : {
+        "requires" : "0.86.0"
+      }
+    }, {
+      "group" : "com.github.komputing",
+      "module" : "kbip44",
+      "version" : {
+        "requires" : "0.5"
+      }
+    }, {
+      "group" : "com.github.komputing",
+      "module" : "kbase58",
+      "version" : {
+        "requires" : "0.4"
+      }
+    }, {
+      "group" : "com.github.komputing.khash",
+      "module" : "sha256",
+      "version" : {
+        "requires" : "1.1.1"
+      }
+    }, {
+      "group" : "com.github.komputing.khash",
+      "module" : "ripemd160",
+      "version" : {
+        "requires" : "1.1.1"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib",
+      "version" : {
+        "requires" : "1.6.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "bip32-0.86.0.jar",
+      "url" : "bip32-0.86.0.jar",
+      "size" : 15275,
+      "sha512" : "eafcd2da3e4f5ac55748030283b2516b7f75660c71383a4a7b5a8c85b4ec3daa9c42c8a1fc8abb00fece6de0f2c68ed6fe4269b3f00ce532cc5d51fc62eb402f",
+      "sha256" : "a8d51fa402221db9a65ac539c897c2c47935418a4e56e74b4d25fde09ad75e1e",
+      "sha1" : "cddb84dbfc98b38b5afd09b5f8616bf43df6a570",
+      "md5" : "c6a0c4724b0196bdc700622661f15df6"
+    } ]
+  }, {
+    "name" : "sourcesElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "sources",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "bip32-0.86.0.jar",
+      "url" : "bip32-0.86.0.jar",
+      "size" : 5138,
+      "sha512" : "bf7e09b2a2c56f289e587578f7e44c01f51f00437427392ca4140d6bcc870d85272e67b3b4162ed4ddcea1de707eb56d5e829e3591d7c6b087949ac22fd8f1da",
+      "sha256" : "8d201d645706d431638f9b4ebf63bf87b4a6aeeb92f2892d0d823e274d92da3a",
+      "sha1" : "e7d1a31ee680af309613647a8893891c9c28d8da",
+      "md5" : "2499496c6be9f45a1d77426fae9fc3a8"
+    } ]
+  }, {
+    "name" : "javadocElements",
+    "attributes" : {
+      "org.gradle.category" : "documentation",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.docstype" : "javadoc",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "bip32-0.86.0.jar",
+      "url" : "bip32-0.86.0.jar",
+      "size" : 261,
+      "sha512" : "1bec0a81386b6be3809b567f8885d0d3f668dfe12e9581e9e346d6f2c659de2b3f78bd36acd305512cb0fa6f70a90289205cfd71a5dac1707559865727c771ab",
+      "sha256" : "20bbc5a82338cd4884a79659399d4aa706b5ae9977e0b4be1db6a1ac2b940b2c",
+      "sha1" : "601304c6fe0b8cb63a304ff113912284d4ec416c",
+      "md5" : "545ba0a536d10375d2d3a6244e03b76d"
+    } ]
+  } ]
+}

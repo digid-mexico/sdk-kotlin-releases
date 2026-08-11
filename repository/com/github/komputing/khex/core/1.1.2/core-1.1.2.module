@@ -1,0 +1,139 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.0.2"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "khex",
+    "version" : "1.1.2",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "metadataApiElements",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-metadata",
+      "org.jetbrains.kotlin.platform.type" : "common"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "core-1.1.2.jar",
+      "url" : "core-1.1.2.jar",
+      "size" : 3358,
+      "sha512" : "e683641bb2556d85cbbde3cf4552ca2debbd414e482e34e90f579da540acfa5670784755910f9a3c79dbec437d35073a9591929c34c4d9e73d297f484d490ea2",
+      "sha256" : "b77a77fb4960be9edee57c44a7d1d3abc94845b004480fcb6befd5eb0429c171",
+      "sha1" : "ac4aebfb4cee1c5bd9424546f6c44b9aa8b07f4c",
+      "md5" : "129006e5a9413044208999377a12e30a"
+    } ]
+  }, {
+    "name" : "commonMainMetadataElements",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.platform.type" : "common"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "core-1.1.2.jar",
+      "url" : "core-1.1.2.jar",
+      "size" : 1147,
+      "sha512" : "abe6c5752676fb83f440bc0ef72cd06035b0f20aa5d0fb5f0774dcf93cbaf752ee280491f6ffe8525b33f0c2ebc98a502e5a299313145049afdab878a5b2f2b6",
+      "sha256" : "4a00ce1a29668130cfc99bad718b59b9d5f3117a28728a0936859836dcfde9e6",
+      "sha1" : "27072106bcdcb6d6f32558e28e25ad3c18650b46",
+      "md5" : "24f770eed7c0eb1719a91c7371e353aa"
+    } ]
+  }, {
+    "name" : "jsLegacyApiElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.js.compiler" : "legacy",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../core-js/1.1.2/core-js-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "core-js",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jsLegacyRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-runtime",
+      "org.jetbrains.kotlin.js.compiler" : "legacy",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../core-js/1.1.2/core-js-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "core-js",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jsIrApiElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.js.compiler" : "ir",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../core-js/1.1.2/core-js-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "core-js",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jsIrRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-runtime",
+      "org.jetbrains.kotlin.js.compiler" : "ir",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../core-js/1.1.2/core-js-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "core-js",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jvmApiElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "available-at" : {
+      "url" : "../../core-jvm/1.1.2/core-jvm-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "core-jvm",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jvmRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "available-at" : {
+      "url" : "../../core-jvm/1.1.2/core-jvm-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "core-jvm",
+      "version" : "1.1.2"
+    }
+  } ]
+}

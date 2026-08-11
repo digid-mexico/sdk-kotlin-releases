@@ -1,0 +1,95 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlinx",
+      "module" : "kotlinx-coroutines-core",
+      "version" : {
+        "requires" : "1.4.3"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlinx",
+      "module" : "kotlinx-coroutines-reactive",
+      "version" : {
+        "requires" : "1.4.3"
+      }
+    } ],
+    "files" : [ {
+      "name" : "stream-adapter-coroutines-1.0.2.jar",
+      "url" : "stream-adapter-coroutines-1.0.2.jar",
+      "size" : 3125,
+      "sha512" : "771510b5d7122a765ce5614697e698372b5c7ab176faa202e1806aadf319024ba71eb5d5cdb28add6614178fd49853112a8b85d5547297eb47898c9cd6d9a3a2",
+      "sha256" : "7a1c1781d52df57c6850272d297dbe6b6dd71ea880591f3d2cdda24369ea9c27",
+      "sha1" : "612968baa672be77a7a4b72ba14e2447fbe93faf",
+      "md5" : "00cba64d84d46c0efec17f607883a000"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlinx",
+      "module" : "kotlinx-coroutines-core",
+      "version" : {
+        "requires" : "1.4.3"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlinx",
+      "module" : "kotlinx-coroutines-reactive",
+      "version" : {
+        "requires" : "1.4.3"
+      }
+    } ],
+    "files" : [ {
+      "name" : "stream-adapter-coroutines-1.0.2.jar",
+      "url" : "stream-adapter-coroutines-1.0.2.jar",
+      "size" : 3125,
+      "sha512" : "771510b5d7122a765ce5614697e698372b5c7ab176faa202e1806aadf319024ba71eb5d5cdb28add6614178fd49853112a8b85d5547297eb47898c9cd6d9a3a2",
+      "sha256" : "7a1c1781d52df57c6850272d297dbe6b6dd71ea880591f3d2cdda24369ea9c27",
+      "sha1" : "612968baa672be77a7a4b72ba14e2447fbe93faf",
+      "md5" : "00cba64d84d46c0efec17f607883a000"
+    } ]
+  } ]
+}

@@ -1,0 +1,139 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.0.2"
+    }
+  },
+  "component" : {
+    "group" : "com.github.komputing",
+    "module" : "khex",
+    "version" : "1.1.2",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "metadataApiElements",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-metadata",
+      "org.jetbrains.kotlin.platform.type" : "common"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "extensions-1.1.2.jar",
+      "url" : "extensions-1.1.2.jar",
+      "size" : 4701,
+      "sha512" : "cc9e52dc61d60e1ce1e331bbb66709f6fec20ffae2bef0205f31306f27505add0f56b557eee887e8f3eefb1ab45f19e125c9b322565786dd702df342b04dd58b",
+      "sha256" : "e8b2fa349d19f809b5357ad9c511008a35a5af9308d1d24d89d532a429edd754",
+      "sha1" : "49cf66c01e69cdea5802381b4b878cb9ff4ebf1f",
+      "md5" : "0c4cd6a4cbed45dd05777abba37eb5ec"
+    } ]
+  }, {
+    "name" : "commonMainMetadataElements",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.platform.type" : "common"
+    },
+    "dependencies" : [ {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-common",
+      "version" : {
+        "requires" : "1.5.10"
+      }
+    } ],
+    "files" : [ {
+      "name" : "extensions-1.1.2.jar",
+      "url" : "extensions-1.1.2.jar",
+      "size" : 2752,
+      "sha512" : "8bd2abba05e7c79749c8762249e93706a400875479b0c1e86ac7560635865374e8b04c0bd452901d0023896b559e724621b164dbc1b282db2bf69c2d49f4ebf3",
+      "sha256" : "fc376245d635f399fe68f82cce11704e6c7512f25cf5f549e9c647d3d48fb4da",
+      "sha1" : "1cebb46335f4999b8339b07c688856b9365033ea",
+      "md5" : "0e3a5b0d5918b515b6f59a92ba148358"
+    } ]
+  }, {
+    "name" : "jsLegacyApiElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.js.compiler" : "legacy",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../extensions-js/1.1.2/extensions-js-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "extensions-js",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jsLegacyRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-runtime",
+      "org.jetbrains.kotlin.js.compiler" : "legacy",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../extensions-js/1.1.2/extensions-js-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "extensions-js",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jsIrApiElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-api",
+      "org.jetbrains.kotlin.js.compiler" : "ir",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../extensions-js/1.1.2/extensions-js-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "extensions-js",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jsIrRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.usage" : "kotlin-runtime",
+      "org.jetbrains.kotlin.js.compiler" : "ir",
+      "org.jetbrains.kotlin.platform.type" : "js"
+    },
+    "available-at" : {
+      "url" : "../../extensions-js/1.1.2/extensions-js-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "extensions-js",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jvmApiElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "available-at" : {
+      "url" : "../../extensions-jvm/1.1.2/extensions-jvm-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "extensions-jvm",
+      "version" : "1.1.2"
+    }
+  }, {
+    "name" : "jvmRuntimeElements-published",
+    "attributes" : {
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "available-at" : {
+      "url" : "../../extensions-jvm/1.1.2/extensions-jvm-1.1.2.module",
+      "group" : "com.github.komputing.khex",
+      "module" : "extensions-jvm",
+      "version" : "1.1.2"
+    }
+  } ]
+}

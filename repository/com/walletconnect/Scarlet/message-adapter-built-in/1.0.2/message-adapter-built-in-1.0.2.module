@@ -1,0 +1,70 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.2"
+    }
+  },
+  "component" : {
+    "group" : "com.walletconnect",
+    "module" : "Scarlet",
+    "version" : "1.0.2",
+    "attributes" : {
+      "org.gradle.status" : "integration"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "files" : [ {
+      "name" : "message-adapter-built-in-1.0.2.jar",
+      "url" : "message-adapter-built-in-1.0.2.jar",
+      "size" : 4883,
+      "sha512" : "760b28c1f2f28d0296776172324d1832f1bf9a9afc5c01300440b14332d251e6b6a0298269c7b74d0faa9856125e1d0ba22dab1536fdd546edb44840646f39c8",
+      "sha256" : "5081ab1f4b7a1670ef59df2085723b21cfd2e65ce3c1f83563ee042963411ebd",
+      "sha1" : "084df020ebf036f5304fa3776652dbd0de02b2a2",
+      "md5" : "d14753b2a1e487e11af17cb005130c2c"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.environment" : "standard-jvm",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime",
+      "org.jetbrains.kotlin.platform.type" : "jvm"
+    },
+    "dependencies" : [ {
+      "group" : "com.walletconnect.Scarlet",
+      "module" : "scarlet-core",
+      "version" : {
+        "requires" : "1.0.2"
+      }
+    }, {
+      "group" : "org.jetbrains.kotlin",
+      "module" : "kotlin-stdlib-jdk7",
+      "version" : {
+        "requires" : "1.8.20"
+      }
+    } ],
+    "files" : [ {
+      "name" : "message-adapter-built-in-1.0.2.jar",
+      "url" : "message-adapter-built-in-1.0.2.jar",
+      "size" : 4883,
+      "sha512" : "760b28c1f2f28d0296776172324d1832f1bf9a9afc5c01300440b14332d251e6b6a0298269c7b74d0faa9856125e1d0ba22dab1536fdd546edb44840646f39c8",
+      "sha256" : "5081ab1f4b7a1670ef59df2085723b21cfd2e65ce3c1f83563ee042963411ebd",
+      "sha1" : "084df020ebf036f5304fa3776652dbd0de02b2a2",
+      "md5" : "d14753b2a1e487e11af17cb005130c2c"
+    } ]
+  } ]
+}
