@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ### 2. Agregar la dependencia en `build.gradle.kts` (módulo app)
 
 ```kotlin
-implementation("com.digid:digid-sdk:3.0.0")
+implementation("com.digid:digid-sdk:3.1.0")
 ```
 
 ### 3. Permisos
@@ -66,7 +66,8 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 
 | Versión | Fecha      | Novedades                                                                          |
 |---------|------------|------------------------------------------------------------------------------------|
-| 3.0.0   | 2026-08-11 | `isApproved` ahora exige que el servidor haya aprobado. Firma con ubicación (`required_gps`). El almacén de token deja de tumbar la app tras restaurar el teléfono. Un error del servidor al finalizar la firma ya no se reporta como éxito. **Cambios breaking** (ver migración). **Versión recomendada.** |
+| 3.1.0   | 2026-08-19 | `DigidTheme.accentColor` para teñir las ilustraciones (opt-in). La ubicación de la firma ya no falla en interiores. El botón inferior ya no queda bajo la navegación del sistema en Android 15 con `targetSdk 35`. Sin cambios breaking. **Versión recomendada.** |
+| 3.0.0   | 2026-08-11 | `isApproved` ahora exige que el servidor haya aprobado. Firma con ubicación (`required_gps`). El almacén de token deja de tumbar la app tras restaurar el teléfono. Un error del servidor al finalizar la firma ya no se reporta como éxito. **Cambios breaking** (ver migración). |
 | 2.3.0   | 2026-08-03 | Zoom con pinch en la lectura del documento. La pantalla de T&C ahora la dicta el backend por cliente (sin cambios de integración). `address_data` agrega `municipio`, `colonia`, `numero_exterior`, `cruzamientos` y `parsing_confidence`. Corrige la orientación de la selfie del flujo de firma. |
 | 2.2.0   | 2026-07-21 | `KycResult.sessionId` devuelve ahora el identificador que envía el integrador en `EXTRA_SESSION_ID` (antes devolvía siempre el interno). Nuevo error `DUPLICATE_SESSION_ID` cuando ese id ya se usó. |
 | 2.1.0   | 2026-07-07 | Scores en Double (precisión), JSON con claves fijas (null explícito), `created_at`/`updated_at` en vez de `timestamp`, se quita `document.address`. |
@@ -76,6 +77,28 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 | 1.2.0   | 2026-05-27 | Correcciones de errores silenciosos y mejoras de estabilidad                       |
 | 1.1.0   | 2026-04-29 | Vista de Términos y Condiciones obligatoria (`DigidTermsConfig`)                    |
 | 1.0.0   | 2026-04-25 | Release inicial                                                                    |
+
+## Novedades de la 3.1.0
+
+### Color de acento en las ilustraciones — opt-in
+
+`DigidTheme` agrega `accentColor`, que tiñe los elementos decorativos verde azulado de las ilustraciones del SDK (hoy, la pantalla de Términos y Condiciones):
+
+```kotlin
+DigidTheme(
+    primaryColor = "#1A3C6E",
+    secondaryColor = "#2D8CF0",
+    backgroundColor = "#FFFFFF",
+    accentColor = "#1A3C6E"   // opcional
+)
+```
+
+> **Es opt-in a propósito**: si no lo configuras, las ilustraciones conservan su color original (`#6AC1B4`) — actualizar el SDK no cambia nada visualmente. Los botones y cabeceras siguen usando `primaryColor`; si quieres que la ilustración acompañe a tu tema, pasa `accentColor` explícitamente.
+
+### Correcciones
+
+- **La ubicación de la firma ya no falla en interiores.** Con el permiso concedido y el GPS activo, obtener la coordenada podía fallar 2 o más veces antes de funcionar: solo se consultaba el proveedor GPS, cuyo fix en interiores tarda más que el plazo. Ahora se consultan todos los proveedores en paralelo (el de red responde en segundos), hay respaldo de lectura previa, y al finalizar se espera la petición en vuelo con progreso en vez de mostrar un error inmediato.
+- **El botón inferior ya no queda bajo la navegación del sistema.** En Android 15 con `targetSdk 35` (obligatorio en Play desde agosto 2026), la primera entrada al flujo podía dejar el botón Continuar debajo de la barra de navegación, intapeable con 3 botones. Afectaba las cinco vistas del SDK de forma intermitente.
 
 ## Novedades de la 3.0.0
 
