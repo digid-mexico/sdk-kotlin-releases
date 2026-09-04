@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ### 2. Agregar la dependencia en `build.gradle.kts` (módulo app)
 
 ```kotlin
-implementation("com.digid:digid-sdk:3.1.0")
+implementation("com.digid:digid-sdk:3.2.0")
 ```
 
 ### 3. Permisos
