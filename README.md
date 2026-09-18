@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ### 2. Agregar la dependencia en `build.gradle.kts` (módulo app)
 
 ```kotlin
-implementation("com.digid:digid-sdk:3.2.0")
+implementation("com.digid:digid-sdk:3.3.0")
 ```
 
 ### 3. Permisos
@@ -66,7 +66,8 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 
 | Versión | Fecha      | Novedades                                                                          |
 |---------|------------|------------------------------------------------------------------------------------|
-| 3.2.0   | 2026-09-04 | Motor de verificación interno actualizado. Sin cambios de API ni de integración: basta con subir la versión del paquete. Sin cambios breaking. **Versión recomendada.** |
+| 3.3.0   | 2026-09-18 | Contraste garantizado en los colores del tema: ningún `DigidTheme` puede dejar un elemento del SDK invisible por bajo contraste, se ajusta automáticamente. Sin cambios de API ni de integración. Sin cambios breaking. **Versión recomendada.** |
+| 3.2.0   | 2026-09-04 | Motor de verificación interno actualizado. Sin cambios de API ni de integración: basta con subir la versión del paquete. Sin cambios breaking. |
 | 3.1.0   | 2026-08-19 | `DigidTheme.accentColor` para teñir las ilustraciones (opt-in). La ubicación de la firma ya no falla en interiores. El botón inferior ya no queda bajo la navegación del sistema en Android 15 con `targetSdk 35`. Sin cambios breaking. |
 | 3.0.0   | 2026-08-11 | `isApproved` ahora exige que el servidor haya aprobado. Firma con ubicación (`required_gps`). El almacén de token deja de tumbar la app tras restaurar el teléfono. Un error del servidor al finalizar la firma ya no se reporta como éxito. **Cambios breaking** (ver migración). |
 | 2.3.0   | 2026-08-03 | Zoom con pinch en la lectura del documento. La pantalla de T&C ahora la dicta el backend por cliente (sin cambios de integración). `address_data` agrega `municipio`, `colonia`, `numero_exterior`, `cruzamientos` y `parsing_confidence`. Corrige la orientación de la selfie del flujo de firma. |
@@ -78,6 +79,20 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 | 1.2.0   | 2026-05-27 | Correcciones de errores silenciosos y mejoras de estabilidad                       |
 | 1.1.0   | 2026-04-29 | Vista de Términos y Condiciones obligatoria (`DigidTermsConfig`)                    |
 | 1.0.0   | 2026-04-25 | Release inicial                                                                    |
+
+## Novedades de la 3.3.0
+
+### Contraste garantizado en los colores del tema
+
+Ninguna combinación de colores que configures en `DigidTheme` puede dejar un elemento del SDK invisible. Antes, un `secondaryColor` demasiado parecido al fondo (por ejemplo, blanco sobre blanco) podía hacer que un botón perdiera su texto o su borde por completo. Ahora el SDK mide el contraste de cada color contra el fondo real sobre el que lo pinta y, si no alcanza el mínimo legible, lo ajusta automáticamente conservando el tono — sin que tengas que cambiar nada en tu integración.
+
+Si tu tema ya tiene buen contraste, esta versión no cambia ni un pixel de tu app: es el requisito de idempotencia que valida la propia suite de tests del SDK.
+
+Si no personalizaste `secondaryColor`, el valor por defecto cambia de `#2D8CF0` a `#0F71D8` (mismo tono, con mejor contraste) — es el único cambio visual de esta versión para quien use la configuración por defecto.
+
+Si tu tema tiene una combinación de bajo contraste, además del ajuste automático verás un aviso en el log al inicializar el SDK, indicando qué colores conviene revisar.
+
+Sin cambios de API ni de integración. Sin cambios breaking.
 
 ## Novedades de la 3.2.0
 
