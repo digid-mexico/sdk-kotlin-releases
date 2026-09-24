@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ### 2. Agregar la dependencia en `build.gradle.kts` (módulo app)
 
 ```kotlin
-implementation("com.digid:digid-sdk:3.3.0")
+implementation("com.digid:digid-sdk:3.4.0")
 ```
 
 ### 3. Permisos
@@ -66,7 +66,8 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 
 | Versión | Fecha      | Novedades                                                                          |
 |---------|------------|------------------------------------------------------------------------------------|
-| 3.3.0   | 2026-09-18 | Contraste garantizado en los colores del tema: ningún `DigidTheme` puede dejar un elemento del SDK invisible por bajo contraste, se ajusta automáticamente. Sin cambios de API ni de integración. Sin cambios breaking. **Versión recomendada.** |
+| 3.4.0   | 2026-09-24 | Un resultado con `ready = false` ya no es un veredicto: si el servidor no responde a tiempo llega como `"Pending"`. Nuevos `renapo`, `lista_nominal` y `code` en los motivos de rechazo. Sin cambios de permisos, dependencias ni funciones existentes. **Versión recomendada.** |
+| 3.3.0   | 2026-09-18 | Contraste garantizado en los colores del tema: ningún `DigidTheme` puede dejar un elemento del SDK invisible por bajo contraste, se ajusta automáticamente. Sin cambios de API ni de integración. Sin cambios breaking. |
 | 3.2.0   | 2026-09-04 | Motor de verificación interno actualizado. Sin cambios de API ni de integración: basta con subir la versión del paquete. Sin cambios breaking. |
 | 3.1.0   | 2026-08-19 | `DigidTheme.accentColor` para teñir las ilustraciones (opt-in). La ubicación de la firma ya no falla en interiores. El botón inferior ya no queda bajo la navegación del sistema en Android 15 con `targetSdk 35`. Sin cambios breaking. |
 | 3.0.0   | 2026-08-11 | `isApproved` ahora exige que el servidor haya aprobado. Firma con ubicación (`required_gps`). El almacén de token deja de tumbar la app tras restaurar el teléfono. Un error del servidor al finalizar la firma ya no se reporta como éxito. **Cambios breaking** (ver migración). |
@@ -79,6 +80,36 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 | 1.2.0   | 2026-05-27 | Correcciones de errores silenciosos y mejoras de estabilidad                       |
 | 1.1.0   | 2026-04-29 | Vista de Términos y Condiciones obligatoria (`DigidTermsConfig`)                    |
 | 1.0.0   | 2026-04-25 | Release inicial                                                                    |
+
+## Novedades de la 3.4.0
+
+### Un resultado con `ready = false` ya no es un veredicto
+
+Si el servidor no entrega el veredicto dentro del tiempo de espera (~60 s), el `KycResult` llega con `ready = false`, `status = "Pending"` y `faceMatch`, `livenessCheck` y `documentValid` en `false`; `isApproved` devuelve `false`. Antes repetía el estado preliminar del análisis biométrico (por ejemplo `"Approved"` con `isApproved = true`), aunque el servidor todavía pudiera rechazar la verificación por las validaciones de RENAPO o de la lista nominal del INE.
+
+**Qué hacer:** si `ready` es `false`, no registres la verificación como aprobada ni como rechazada: consulta el resultado definitivo desde tu backend con el `sessionId` (Manual de Integración, sección 4.5). Una verificación en revisión manual (`status = "In Review"`) también llega con `ready = false`. El `message` de estos resultados ahora dice "Resultado pendiente: consulta el veredicto definitivo en el servidor."
+
+### RENAPO y lista nominal del INE en el resultado
+
+Para los clientes con estas validaciones activas, `KycResult` agrega:
+
+- `renapo`: `status`, `code`, `validations` (`curp`, `full_name`, `date_of_birth`, `gender`, `curp_status`) y `data` (registro de RENAPO).
+- `lista_nominal`: `status` y `code`.
+- En `rejectionReasons`, cada motivo trae además `code` (por ejemplo `RENAPO_BAJA`), `status` y `risk`.
+
+Llevan los mismos nombres y valores que el JSON del servidor. `null` indica que no hay una consulta guardada para esa verificación.
+
+```kotlin
+val curpStatus = result.renapo?.validations?.curp_status   // "active", "cancelled", "not_available"
+val credencial = result.lista_nominal?.status              // "vigente", "no_vigente", "no_encontrada"
+result.rejectionReasons.forEach { Log.d("KYC", "${it.code}: ${it.message}") }
+```
+
+### Compatibilidad
+
+No cambia ningún permiso, dependencia ni función existente: actualizar solo requiere subir la versión del paquete, y si no usas los campos nuevos tu integración sigue igual (salvo el caso de `ready = false` descrito arriba).
+
+`toJson()` agrega las llaves `renapo` y `lista_nominal` (siempre presentes, `null` si no hubo consulta) y `status`/`code`/`risk` en cada motivo. Si tu backend deserializa ese JSON rechazando llaves desconocidas (por ejemplo `kotlinx.serialization` sin `ignoreUnknownKeys`, o Jackson con `FAIL_ON_UNKNOWN_PROPERTIES`), configúralo para ignorarlas.
 
 ## Novedades de la 3.3.0
 
