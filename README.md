@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ### 2. Agregar la dependencia en `build.gradle.kts` (módulo app)
 
 ```kotlin
-implementation("com.digid:digid-sdk:3.4.0")
+implementation("com.digid:digid-sdk:3.4.1")
 ```
 
 ### 3. Permisos
@@ -66,7 +66,8 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 
 | Versión | Fecha      | Novedades                                                                          |
 |---------|------------|------------------------------------------------------------------------------------|
-| 3.4.0   | 2026-09-24 | Un resultado con `ready = false` ya no es un veredicto: si el servidor no responde a tiempo llega como `"Pending"`. Nuevos `renapo`, `lista_nominal` y `code` en los motivos de rechazo. Sin cambios de permisos, dependencias ni funciones existentes. **Versión recomendada.** |
+| 3.4.1   | 2026-11-20 | La selfie y la INE de la firma se suben nítidas y con su proporción: antes llegaban reducidas a 96 × 96 px y se veían pixeleadas en el documento firmado. Sin cambios de API ni de integración: basta con subir la versión del paquete. Sin cambios breaking. **Versión recomendada.** |
+| 3.4.0   | 2026-09-24 | Un resultado con `ready = false` ya no es un veredicto: si el servidor no responde a tiempo llega como `"Pending"`. Nuevos `renapo`, `lista_nominal` y `code` en los motivos de rechazo. Sin cambios de permisos, dependencias ni funciones existentes. |
 | 3.3.0   | 2026-09-18 | Contraste garantizado en los colores del tema: ningún `DigidTheme` puede dejar un elemento del SDK invisible por bajo contraste, se ajusta automáticamente. Sin cambios de API ni de integración. Sin cambios breaking. |
 | 3.2.0   | 2026-09-04 | Motor de verificación interno actualizado. Sin cambios de API ni de integración: basta con subir la versión del paquete. Sin cambios breaking. |
 | 3.1.0   | 2026-08-19 | `DigidTheme.accentColor` para teñir las ilustraciones (opt-in). La ubicación de la firma ya no falla en interiores. El botón inferior ya no queda bajo la navegación del sistema en Android 15 con `targetSdk 35`. Sin cambios breaking. |
@@ -80,6 +81,18 @@ Consulta el **Manual de Integración** para el detalle de los módulos KYC y de 
 | 1.2.0   | 2026-05-27 | Correcciones de errores silenciosos y mejoras de estabilidad                       |
 | 1.1.0   | 2026-04-29 | Vista de Términos y Condiciones obligatoria (`DigidTermsConfig`)                    |
 | 1.0.0   | 2026-04-25 | Release inicial                                                                    |
+
+## Novedades de la 3.4.1
+
+### La selfie y la INE salen nítidas en el documento firmado
+
+Las fotos que el SDK sube para la firma (la selfie de `SelfieCaptureActivity` y la selfie y la INE de `DigidSignatureService.uploadImages`) se reducían a un cuadrado de 96 × 96 px. En la hoja de evidencias del documento firmado se veían pixeleadas y la credencial aparecía deformada.
+
+Ahora se suben en JPEG con su proporción original y hasta 1000 px por lado, suficiente para que se impriman nítidas. Una foto más chica se envía tal cual, sin agrandarla. La firma que recibe `DigidSignatureService.uploadImages` también conserva su proporción (sigue en PNG).
+
+### Compatibilidad
+
+No cambia ninguna API, permiso ni dependencia: basta con subir la versión del paquete. Cada foto pesa unos cientos de KB en lugar de unos pocos, así que la subida puede tardar un poco más en conexiones lentas. Los documentos firmados antes de actualizar no cambian.
 
 ## Novedades de la 3.4.0
 
